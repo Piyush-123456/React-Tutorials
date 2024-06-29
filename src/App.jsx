@@ -5,7 +5,7 @@ import Row1 from './components/row1';
 const App = () => {
   return <div >
     <Heading></Heading>
-    <Row1></Row1> 
+    <Row1></Row1>
     <Row></Row>
 
   </div>
