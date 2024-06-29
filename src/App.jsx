@@ -1,16 +1,13 @@
 import React from 'react';
 import Heading from './components/heading';
-import Row from './components/row';
-import Row1 from './components/row1';
+import Heading2 from './components/heading2';
+import Time from './components/time';
 const App = () => {
-  return <div >
+  return <center >
     <Heading></Heading>
-    <Row1></Row1>
-    <Row></Row>
-
-  </div>
-
-
+    <Heading2></Heading2>
+    <Time></Time>
+  </center>
 }
 
 export default App;

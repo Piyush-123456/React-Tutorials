@@ -2,9 +2,9 @@ import React from 'react'
 
 const heading = () => {
   return (
-    <h1 className='text-center font-gilroy'>
-        Todo List
-    </h1>
+    <div>
+        <h1> Bharat Clock </h1>
+    </div>
   )
 }
 
