@@ -1,16 +1,21 @@
 import React from 'react'
-import FoodItems from './components/foodItems';
+import Addtodo from './components/addtodo'
+import Items from './components/items'
 const App = () => {
-  let items = ['dal', 'piyush', 'chawal', 'hindi'];
-  // let items = []
-  if (items.length == 0) {
-    return <h1>
-      Empty every
-    </h1>
-  }
+  const foodItems = [
+    {
+      taskname: "go to college",
+      duedate: "4/Jan/55",
+    },
+    {
+      taskname: "eat Lunch",
+      duedate: "4/Jan/55",
+    },
+  ]
   return (
     <div>
-      <FoodItems lovefood={items}></FoodItems>
+      <Addtodo></Addtodo>
+      <Items items={foodItems}></Items>
     </div>
   )
 }
