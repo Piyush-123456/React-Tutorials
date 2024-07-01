@@ -1,13 +1,18 @@
-import React from 'react';
-import Heading from './components/heading';
-import Heading2 from './components/heading2';
-import Time from './components/time';
+import React from 'react'
+import FoodItems from './components/foodItems';
 const App = () => {
-  return <center >
-    <Heading></Heading>
-    <Heading2></Heading2>
-    <Time></Time>
-  </center>
+  let items = ['dal', 'piyush', 'chawal', 'hindi'];
+  // let items = []
+  if (items.length == 0) {
+    return <h1>
+      Empty every
+    </h1>
+  }
+  return (
+    <div>
+      <FoodItems lovefood={items}></FoodItems>
+    </div>
+  )
 }
 
-export default App;
+export default App
