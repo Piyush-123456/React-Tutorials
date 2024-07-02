@@ -1,11 +1,14 @@
 import React from 'react'
 import Container from './components/container'
+import Fooditems from './components/fooditems'
+import Input from './components/input'
 const App = () => {
+  const items = ['dal', 'roti', 'chawal', 'sb bdiya']
   return (
-    <Container>
-      <h1>Hello World!</h1>
-      <h1>This is Piyush Panchabhai</h1>
-    </Container>
+    <div>
+      <Input></Input>
+      <Fooditems items={items}></Fooditems>
+    </div >
   )
 }
 
