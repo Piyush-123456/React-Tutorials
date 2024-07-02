@@ -1,22 +1,11 @@
 import React from 'react'
-import Addtodo from './components/addtodo'
-import Items from './components/items'
+import Container from './components/container'
 const App = () => {
-  const foodItems = [
-    {
-      taskname: "go to college",
-      duedate: "4/Jan/55",
-    },
-    {
-      taskname: "eat Lunch",
-      duedate: "4/Jan/55",
-    },
-  ]
   return (
-    <div>
-      <Addtodo></Addtodo>
-      <Items items={foodItems}></Items>
-    </div>
+    <Container>
+      <h1>Hello World!</h1>
+      <h1>This is Piyush Panchabhai</h1>
+    </Container>
   )
 }
 
