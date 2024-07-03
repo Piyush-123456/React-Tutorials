@@ -1,10 +1,10 @@
 import React from 'react'
 import Items from './items'
-const fooditems = (props) => {
+const fooditems = ({ items, HandleOnChange }) => {
     return (
         <ul className='list-group '>
-            {props.items.map((elem) => (
-                <Items items={elem}></Items>
+            {items.map((elem) => (
+                <Items elem={elem}  ></Items>
             ))}
         </ul>
     )

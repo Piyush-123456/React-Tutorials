@@ -1,9 +1,9 @@
 import React from 'react'
 
-const items = (props) => {
+const items = ({ elem }) => {
     return (
-        <li className='list-group-item' key={props.items}>
-            {props.items}
+        <li className='list-group-item' key={elem}>
+            {elem}
             <button type="submit" className='btn btn-success float-end' >
                 Buy
             </button>

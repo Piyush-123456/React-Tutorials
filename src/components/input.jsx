@@ -1,13 +1,11 @@
 import React from 'react'
 
-const input = () => {
-    const onChangeHandler = (event) => {
-        console.log(event.target.value);
-    }
+const input = ({HandleOnChange}) => {
+
 
     return (
         <div>
-            <input type="text" onChange={onChangeHandler} />
+            <input type="text" onChange={HandleOnChange} />
         </div>
     )
 }
