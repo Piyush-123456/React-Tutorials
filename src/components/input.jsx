@@ -1,11 +1,11 @@
 import React from 'react'
 
-const input = ({HandleOnChange}) => {
+const input = ({ HandleOnChange }) => {
 
 
     return (
         <div>
-            <input type="text" onChange={HandleOnChange} />
+            <input type="text" onKeyDown={HandleOnChange} />
         </div>
     )
 }
